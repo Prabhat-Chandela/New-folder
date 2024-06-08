@@ -8,6 +8,7 @@ import Services from "./Services";
 import PrivacyPolicy from "./PrivacyPolicy";
 import TermsCondition from "./TermsCondition";
 
+
 export {
     Home,
     Magazines,
@@ -18,4 +19,5 @@ export {
     Services,
     PrivacyPolicy,
     TermsCondition,
+   
 }

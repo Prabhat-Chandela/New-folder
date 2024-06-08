@@ -8,45 +8,45 @@ function Counter() {
         <div
             className='grid grid-cols-3 gap-2'>
 
-            <div className='col-span-3 sm:col-span-1 border-2 border-black bg-transparent flex flex-col items-center gap-1 justify-center py-9' >
-                <h2 className="text-black font-robotoBold text-[8vw] sm:text-[5vw]">
+            <div className='col-span-1 bg-transparent flex flex-col items-center gap-1 overflow-hidden ' >
+                <h2 className="text-black font-robotoBold text-[4vw]">
                     <CountUp
                         start={0}
                         end={50}
                         duration={2.75}
-                    />+
+                    /><mark className="bg-transparent text-red-600">+</mark>
                 </h2>
-                <h4 className="text-xs lg:text-lg font-robotoMedium tracking-[0.3vw]">
-                    STORIES OF LEADERS
+                <h4 className="text-xs font-robotoMedium lg:tracking-[0.3vw]">
+                    STORIES OF <mark className="bg-transparent text-red-600">LEADERS</mark>
                 </h4>
 
 
             </div>
 
-            <div className='col-span-3 sm:col-span-1 border-2 border-black bg-transparent flex flex-col items-center justify-center gap-1 py-9'>
-                <h2 className="text-black font-robotoBold text-[8vw] sm:text-[5vw]">
+            <div className='col-span-1 bg-transparent flex flex-col items-center gap-1 overflow-hidden'>
+                <h2 className="text-black font-robotoBold text-[4vw]">
                     <CountUp
                         start={0}
                         end={65}
                         duration={2.75}
-                    />K
+                    /><mark className="bg-transparent text-red-600">K+</mark>
                 </h2>
-                <h4 className="text-xs lg:text-lg font-robotoMedium tracking-[0.3vw]">
-                    EMAIL SUBSCRIBERS
+                <h4 className="text-xs font-robotoMedium lg:tracking-[0.3vw]">
+                    EMAIL <mark className="bg-transparent text-red-600">SUBSCRIBERS</mark>
                 </h4>
 
             </div>
 
-            <div className='col-span-3 sm:col-span-1 border-2 border-black bg-transparent flex flex-col items-center justify-center gap-1 py-9'>
-                <h2 className="text-black font-robotoBold text-[8vw] sm:text-[5vw]">
+            <div className='col-span-1 bg-transparent flex flex-col items-center gap-1 overflow-hidden'>
+                <h2 className="text-black font-robotoBold text-[4vw]">
                     <CountUp
                         start={0}
-                        end={4}
+                        end={1}
                         duration={2.75}
-                    />
+                    /><mark className="bg-transparent text-red-600">M+</mark>
                 </h2>
-                <h4 className="text-xs lg:text-lg font-robotoMedium tracking-[0.3vw]">
-                    RELEASED MAGAZINES
+                <h4 className="text-xs font-robotoMedium lg:tracking-[0.3vw]">
+                    LEADS <mark className="bg-transparent text-red-600">GENERATED</mark>
                 </h4>
 
             </div>

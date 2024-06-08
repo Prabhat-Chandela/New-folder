@@ -53,15 +53,15 @@ function Services() {
   return (
 
     <>
-      <section className=" mt-9 sm:mt-7">
+      <section className=" mt-[14vh] p-5">
       <div className="w-full flex flex-col gap-5">
         <div className="overflow-hidden">
         <m.h2
         initial={{opacity:0 , y:"100%"}}
         animate={{opacity:1,y:0}}
         transition={{ delay: 0.5, duration: 0.5, type: "spring", stiffness: 100 }}
-        className="bg-gradient-to-r from-red-700 to-red-500 bg-clip-text text-transparent font-robotoBlack text-[7vw] sm:text-[5vw] lg:text-[3vw] tracking-[1vw]">
-          AREA OF EXPERTISE
+        className="text-black font-robotoBlack text-[7vw] sm:text-[5vw] lg:text-[3vw] tracking-[1vw]">
+          AREA OF <mark className="bg-transparent text-red-600">EXPERTISE</mark>
         </m.h2>
         </div>
 
@@ -70,7 +70,7 @@ function Services() {
         animate={{opacity:1}}
         transition={{delay:0.5, duration:0.5 , ease:"easeInOut"}}
         className="w-full flex flex-col gap-3">
-        <p className="text-white font-robotoRegular text-xs sm:text-sm sm:w-[60%] lg:w-[35%]">Whatever you want to do, if you want to be great at it, you have to love it and be able to make sacrifices for it.</p>
+        <p className="text-black font-robotoMedium text-xs sm:text-sm sm:w-[60%] lg:w-[35%]">Whatever you want to do, if you want to be great at it, you have to love it and be able to make sacrifices for it.</p>
        
           <Button onClick={()=>navigate("/contact")}>Ping Us</Button>
           </m.div>
@@ -79,7 +79,7 @@ function Services() {
 
       </section>
 
-      <section className="mt-7">
+      <section className="mt-7 p-5">
         <m.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

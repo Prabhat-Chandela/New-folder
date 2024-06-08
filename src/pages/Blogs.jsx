@@ -6,15 +6,15 @@ function Blogs() {
   const allBlogs = useSelector((state) => state.post.allBlogs);
 
   return (
-    <div className="mt-9 sm:mt-7 w-full flex flex-col gap-7">
+    <div className="mt-[14vh] w-full flex flex-col gap-7 p-5">
       <section className="w-full flex flex-col gap-5">
         <div className="overflow-hidden">
           <m.h2
             initial={{ opacity: 0, y: "100%" }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.5, type: "spring", stiffness: 100 }}
-            className="bg-gradient-to-r from-red-700 to-red-500 bg-clip-text text-transparent font-robotoBlack text-[7vw] sm:text-[5vw] lg:text-[3vw] tracking-[1vw]">
-            BLOGPOST SHELF
+            className="text-black font-robotoBlack text-[7vw] sm:text-[5vw] lg:text-[3vw] tracking-[1vw]">
+            BLOGPOST <mark className="bg-transparent text-red-600">SHELF</mark>
           </m.h2>
         </div>
 
@@ -22,7 +22,7 @@ function Blogs() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.5, ease: "easeInOut" }}
-          className="text-white font-robotoRegular text-xs sm:text-sm sm:w-[60%] lg:w-[47%]">Step into the realm of global leadership with our blog, where we explore the profound insights and inspiration from the experiences of influential figures worldwide.</m.p>
+          className="text-black font-robotoMedium text-xs sm:text-sm sm:w-[60%] lg:w-[47%]">Step into the realm of global leadership with our blog, where we explore the profound insights and inspiration from the experiences of influential figures worldwide.</m.p>
 
       </section>
 

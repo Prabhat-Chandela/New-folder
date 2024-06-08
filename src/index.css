@@ -28,16 +28,28 @@
     src: local("Roboto-Regular"),url("./assets/fonts/Roboto-Regular.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: "AlegreyaSans-Bold";
+    src: local("AlegreyaSans-Bold"),url("./assets/fonts/AlegreyaSans-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "AlegreyaSans-Thin";
+    src: local("AlegreyaSans-Thin"),url("./assets/fonts/AlegreyaSans-Thin.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "AlegreyaSans-Light";
+    src: local("AlegreyaSans-Light"),url("./assets/fonts/AlegreyaSans-Light.ttf") format("truetype");
+}
+
 ::-webkit-scrollbar{
     width: 8px;
 }
 
-::-webkit-scrollbar-track{
-    background: #000;
-}
 
 ::-webkit-scrollbar-thumb{
-    background: #bb1e1e;
+    background: #000;
     border-radius: 4px;
 }
 

@@ -33,23 +33,22 @@ function Header() {
 
 
   return (
-    <div className="w-full bg-black fixed top-0 left-0 right-0 z-30 shadow-[0px_-2px_15px_rgba(221,_221,_221,_1)]">
-      <nav className="flex items-center justify-between p-3 sm:p-6 ">
-        <section>
-          <div>
-            <div className=" w-[70%] sm:w-[30%] h-10">
-              <img className="w-full h-full" src="src/assets/images/Lateral-Review-Logo-withOut-Tagline.svg" alt="logo" />
+    <div className="lg:w-[58%] lg:rounded-b-lg fixed bg-[#FEFEFE] z-10 h-[13vh] lg:h-[14vh] flex items-center">
+      <nav className="flex items-center justify-between p-2 ">
+        <section className="flex items-center ">
+            <div className="w-[30%] sm:w-[10%] lg:w-[20%] xl:w-[30%]">
+              <img className="w-full h-full" src="Lateral-Review.webp" alt="logo" />
             </div>
-          </div>
+          
         </section>
 
         <section>
           <div>
-            <ul className="flex items-center gap-5 sm:gap-7 ">
+            <ul className="flex items-center gap-4 ">
               {navItems.map((item) => (
                 <li key={item.name}>
-                  <NavLink className={({ isActive }) => `flex font-robotoMedium items-center justify-center gap-2 text-xs text-red-600 transition duration-150 ease-out  ${isActive ? " bg-gradient-to-r text-center text-white from-red-700 to-red-500 p-1 sm:px-3 sm:py-2 rounded-md sm:rounded-lg" : "bg-none hover:text-white"}`} to={item.path}><span>{item.icon}</span>
-                    <span className="hidden lg:block">{item.name}</span></NavLink>
+                  <NavLink className={({ isActive }) => `flex font-robotoMedium uppercase tracking-widest items-center justify-center gap-2 text-xs border  p-1 sm:px-2  bg-transparent rounded-lg sm:rounded-xl  text-center transition duration-150 ease-out  ${isActive ? "text-red-600 border-red-600" : "text-black border-black hover:text-red-600"}`} to={item.path}><span>{item.icon}</span>
+                    <span className="hidden xl:block">{item.name}</span></NavLink>
                 </li>
               ))}
             </ul>

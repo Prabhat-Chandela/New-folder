@@ -12,6 +12,9 @@ export default {
         robotoBold:["Roboto-Bold"],
         robotoMedium:["Roboto-Medium"],
         robotoRegular:["Roboto-Regular"],
+        AlegreyaSansBold:["AlegreyaSans-Bold"],
+        AlegreyaSansThin:["AlegreyaSans-Thinr"],
+        AlegreyaSansLight:["AlegreyaSans-Light"],
       }
     },
   },
