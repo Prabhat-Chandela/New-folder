@@ -9,6 +9,7 @@ import Socials from "./Socials/Socials";
 import Carousel from "./Carousel/Carousel";
 import Counter from "./Counter/Counter";
 import GuestCard from "./GuestCard/GuestCard";
+import SwiperCarousel from "./SwiperCarousel/SwiperCarousel";
 
 export {
     Header,
@@ -22,4 +23,5 @@ export {
     Carousel,
     Counter,
     GuestCard,
+    SwiperCarousel,
 }

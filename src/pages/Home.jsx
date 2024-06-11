@@ -1,6 +1,6 @@
-import { ArticleCard, Counter,Carousel, GuestCard } from "../Components/index";
+import { ArticleCard, Counter,Carousel, GuestCard, SwiperCarousel } from "../Components/index";
 import { Newspaper, Star } from "lucide-react";
-import { easeInOut, motion as m } from "framer-motion";
+import { easeInOut, motion as m, spring } from "framer-motion";
 import React, { useEffect} from "react";
 import { useSelector, useDispatch } from "react-redux";
 import databaseService from "../appwrite/databaseService";
@@ -40,7 +40,8 @@ function Home() {
       transition={{ duration: 0.7, ease: easeInOut }}
       className="font-robotoBlack flex flex-col w-full gap-20 lg:gap-32 ">
 
-      <section className="w-full max-h-[100vh] flex flex-col-reverse lg:flex-row p-2 sm:px-5 lg: justify-between mt-[13vh] lg:mt-0">
+      <section 
+      className="w-full max-h-[100vh] flex flex-col-reverse lg:flex-row p-2 sm:px-5 lg: justify-between mt-[13vh] lg:mt-0">
 
         <div className="w-full overflow-hidden lg:w-[60%] sm:h-full  flex flex-col sm:gap-4  lg:mt-[14vh]">
 
@@ -49,7 +50,7 @@ function Home() {
               initial={{ opacity: 0, y: "100%" }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.5, type: "spring", stiffness: 100 }}
-              className="text-[5vw] lg:text-[3vw] font-robotoBlack uppercase tracking-[1vw]">LateraL <mark className="bg-transparent text-red-600">Review</mark></m.h1>
+              className="text-[5vw] lg:text-[3vw] drop-shadow-md font-robotoBlack uppercase tracking-[1vw]">LateraL <mark className="bg-transparent text-red-600">Review</mark></m.h1>
             <m.span
               initial={{ opacity: 0, y: "100%" }}
               animate={{ opacity: 1, y: 0 }}
@@ -149,6 +150,10 @@ function Home() {
           ))}
         </Carousel>
       </m.section> */}
+
+<section className="w-full p-5">
+  <SwiperCarousel allMagazines={allMagazines}/>
+</section>
 
       <section className="flex flex-col gap-3 lg:hidden p-5">
         <h2 className=" text-black font-robotoBold text-md sm:text-xl flex items-center justify-start gap-2 w-fit border-b-4 pb-2 pr-2 border-b-red-600"><span><Newspaper /></span> Recent <mark className="bg-transparent text-red-600">Blogs</mark></h2>

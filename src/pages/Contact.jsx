@@ -29,7 +29,7 @@ function Contact() {
               initial={{ opacity: 0, y: "100%" }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.5, type: "spring", stiffness: 100 }}
-              className="text-black font-robotoBlack text-[7vw] sm:text-[5vw] lg:text-[3vw] tracking-[1vw]">
+              className="text-black font-robotoBlack text-[7vw] sm:text-[5vw] lg:text-[3vw] tracking-[1vw] drop-shadow-md">
               PING US <mark className="bg-transparent text-red-600">HERE</mark>
             </m.h2>
           </div>

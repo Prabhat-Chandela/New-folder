@@ -33,7 +33,7 @@ function Header() {
 
 
   return (
-    <div className="lg:w-[58%] lg:rounded-b-lg fixed bg-[#FEFEFE] z-10 h-[13vh] lg:h-[14vh] flex items-center">
+    <div className="lg:w-[58%] lg:rounded-b-lg fixed bg-[#FEFEFE] backdrop:filter backdrop-blur-md bg-opacity-20 z-10 h-[13vh] lg:h-[14vh] flex items-center">
       <nav className="flex items-center justify-between p-2 ">
         <section className="flex items-center ">
             <div className="w-[30%] sm:w-[10%] lg:w-[20%] xl:w-[30%]">
@@ -47,7 +47,7 @@ function Header() {
             <ul className="flex items-center gap-4 ">
               {navItems.map((item) => (
                 <li key={item.name}>
-                  <NavLink className={({ isActive }) => `flex font-robotoMedium uppercase tracking-widest items-center justify-center gap-2 text-xs border  p-1 sm:px-2  bg-transparent rounded-lg sm:rounded-xl  text-center transition duration-150 ease-out  ${isActive ? "text-red-600 border-red-600" : "text-black border-black hover:text-red-600"}`} to={item.path}><span>{item.icon}</span>
+                  <NavLink className={({ isActive }) => `flex font-robotoMedium uppercase tracking-widest items-center justify-center gap-2 text-xs p-[5px] sm:px-2  rounded-lg sm:rounded-xl shadow-xl  text-center transition duration-150 ease-out  ${isActive ? "text-white bg-red-600" : "text-white bg-black hover:text-red-600"}`} to={item.path}><span>{item.icon}</span>
                     <span className="hidden xl:block">{item.name}</span></NavLink>
                 </li>
               ))}
